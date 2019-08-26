@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kevin Peat - Raspberry Pi / Atari ST Hybrid - Components Used</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Kevin Peat">
+		<meta name="description" content="Kevin Peat - Raspberry Pi / Atari ST Hybrid - Components Used">
+		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2016">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="row-fluid">
+				<div class="span11">
+					<a href="index.html"><img border="0" src="img/banner.jpg" alt="Banner"></a>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>&nbsp;</p>
+					<p>Atari Pi Project: <a href="atari_pi_components.html">Components</a> | 
+					<a href="atari_pi_keyboard_wiring.html">Arduino Wiring</a> | 
+					<a href="atari_pi_keyboard_coding.html">Arduino Coding</a> | 
+					<a href="atari_pi_mounting.html">Pi Mounting</a> | 
+					<a href="atari_pi_software.html">Pi Software</a> | 
+					<a href="atari_pi_assembly.html">Final Assembly</a></p>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span6">
+					<p class="bem">Components Used</p>
+					<p><ul>
+					<li><strong>Atari ST</strong><br>Among my collection of Atari hardware I had a non-working 
+					520STFM that I had purchased some time ago meaning to repair it. The case was in very good 
+					condition not being faded as some ST's can be and with a good complete keyboard with all 
+					keys working so I decided to use it for this project. Please DON'T use working machines 
+					for this kind of project.</li>
+					
+					<li><strong>Raspberry Pi</strong><br>I used an original 256MB Model 'B' Pi as I had one to 
+					hand but as I don't plan to use the ethernet connection, beyond loading some initial packages, a 
+					model 'A' would also have worked. I used a 4GB SD card for the OS.</li>
+
+					<li><strong>Arduino Leonardo</strong><br>The Arduino is used to interface between the 
+					Atari ST keyboard and the Pi. The Leonardo is able to act directly as a USB keyboard controller 
+					so makes this much easier to do. I did originally try to use an Arduino Uno which can also act as 
+					a USB keyboard by re-writing the firmware with a custom version. Unfortunately, this didn't work 
+					as the Uno shares its hardware serial port with the USB connection and the Atari keyboard would 
+					not work correctly with a software serial port. I also considered connecting the ST keyboard 
+					directly to the Pi but wasn't confident that I could get it working that way.</li>
+
+					<li><strong>USB Hub</strong><br>To avoid multiple mains plugs being required I wanted 
+					to power everything including the Pi from a powered USB hub. To enable that I brought a 
+					powered hub on Ebay which came with a 2A power supply which should be more than enough.</li>
+
+					<li><strong>USB Speaker</strong><br>Mostly I will be using the Atari with a monitor that doesn't 
+					have any speakers built-in so I wanted to include a small speaker in the case. I also read that 
+					the Raspberry Pi headphone jack doesn't work very well so I brought a small speaker on Ebay that 
+					would fit in the case and also required only a USB connection for power and audio. If you were 
+					going to make one of these to use with a TV then an internal speaker wouldn't be required.</li>
+
+					<li><strong>USB Mouse</strong><br>I used a Microsoft Compact mouse that I already owned which 
+					was coincidentally a similar colour scheme to the Atari itself. With some software changes it 
+					would be possible to use an original Atari mouse but I much prefer the feel of a modern mouse.</li>
+
+					<li><strong>USB/HDMI Cables</strong><br>A number of USB leads are required depending on the 
+					hardware you are intending to use.</li>
+					</ul></p>
+
+					<p>The Atari cases are easy to strip and clean-up. To open and remove everything from the case 
+					you just need a small cross-headed screwdriver. Be careful when cleaning the case as some of the 
+					small plastic parts can be brittle.</p>
+
+				</div>
+				<div class="span4 offset1">
+					<p align="center"><img src="img/st_bootup.jpg" alt="Atari ST"></p>
+					<p align="center"><img src="img/st_case1.jpg" alt="Atari ST Case"></p>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>Return to <a href="index.html">home page</a>.</p>
+					<hr>
+				</div>
+			</div>
+
+		</div>
+    
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

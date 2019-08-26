@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kevin Peat - Arduino USB Joystick</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Kevin Peat">
+		<meta name="description" content="Kevin Peat - Arduino USB Joystick">
+		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2016">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="row-fluid">
+				<div class="span11">
+					<a href="index.html"><img border="0" src="img/banner.jpg" alt="Banner"></a>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span6">
+					<p class="bem">Arduino USB Arcade Joystick</p>
+
+					<p>I wanted to put together a chunky, arcade style digital joystick to use 
+					when playing retro-games (mostly Atari ST vintage) on the PC.</p>
+
+					<p>I chose to use an Arduino Leonardo due to the built-in USB Human Interface 
+					Device (HID) capabilities. I already had a spare arcade stick from building my 
+					own arcade cabinet so I just had to source a couple of arcade buttons and a 
+					suitably sized plastic enclosure from Ebay.</p>
+
+					<p>I used a 28mm hole saw to mount the buttons and stick in the case which 
+					seems to be the standard size for most arcade components.</p>
+
+					<p>The Arduino is wired to the buttons and stick as follows:</p>
+
+					<p>Button 1 -> Arduino Pin 6<br>
+					Button 2 -> Arduino Pin 7<br>
+					Joystick Left -> Arduino Pin 8<br>
+					Joystick Up -> Arduino Pin 9<br>
+					Joystick Right -> Arduino Pin 10<br>
+					Joystick Down -> Arduino Pin 11</p>
+
+					<p>These connections can be changed as required if you also update the Arduino 
+					sketch accordingly.</p>
+
+					<p>Each button and each joystick axis also need to be connected to the Arduino 
+					GND pin. The arcade buttons that I have each have 3 connectors so you may need 
+					to use a meter to test which two of the connections are closed when the button is 
+					pressed.</p>
+
+					<p>To use an Arduino Leonardo as a USB game controller requires modified versions 
+					of the Arduino libraries, HID.cpp and USBAPI.h which can be found at 
+					<a href="http://www.imaginaryindustries.com/blog/?p=80">www.imaginaryindustries.com</a>. 
+					The simple installation requirements are shown on that page. Thanks to Peter Barrett 
+					for releasing the code. Note that you should change those files back to the original 
+					Arduino versions once you have finished with your joystick and uploaded the sketch to it.</p>
+
+					<p>My Arduino sketch is available to download from 
+					<a href="https://github.com/devonshire/arduino-joystick">GitHub</a>. See the 
+					<a href="http://arduino.cc/en/Guide/HomePage">Arduino Getting Started</a> pages 
+					if you are new to Arduino.</p></p>
+
+				</div>
+				<div class="span4 offset1">
+					<p align="center"><img src="img/joystick1.jpg" alt="Joystick"></p>
+					<p align="center"><img src="img/joystick2.jpg" alt="Joystick"></p>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>Return to <a href="index.html">home page</a>.</p>
+					<hr>
+				</div>
+			</div>
+
+		</div>
+    
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

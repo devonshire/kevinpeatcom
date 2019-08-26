@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kevin Peat - Raspberry Pi / Atari ST Hybrid - Pi Software</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Kevin Peat">
+		<meta name="description" content="Kevin Peat - Raspberry Pi / Atari ST Hybrid - Pi Software">
+		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2016">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="row-fluid">
+				<div class="span11">
+					<a href="index.html"><img border="0" src="img/banner.jpg" alt="Banner"></a>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>&nbsp;</p>
+					<p>Atari Pi Project: <a href="atari_pi_components.html">Components</a> | 
+					<a href="atari_pi_keyboard_wiring.html">Arduino Wiring</a> | 
+					<a href="atari_pi_keyboard_coding.html">Arduino Coding</a> | 
+					<a href="atari_pi_mounting.html">Pi Mounting</a> | 
+					<a href="atari_pi_software.html">Pi Software</a> | 
+					<a href="atari_pi_assembly.html">Final Assembly</a></p>
+				</div>
+			</div>
+
+
+			<div class="row-fluid">
+				<div class="span6">
+					<p class="bem">PI Software</p>
+					<p>I am using the <a href="http://hatari.tuxfamily.org/">Hatari</a> emulator with this project 
+					which is available for a number of operating systems including 
+					<a href="http://www.raspbian.org/">Raspbian</a> and <a href="http://www.riscosopen.org">RISC OS</a>, 
+					both of which run on the Pi. Although I have read some good things about Hatari performance on RISC OS 
+					I decided to use Raspbian because I am much more familiar with it.</p>
+
+					<p>I set-up Raspbian on a 4GB SD card as per this 
+					<a href="http://elinux.org/RPi_Easy_SD_Card_Setup">tutorial</a>.</p>
+
+					<p>I briefly connected the Pi to the internet to install Hatari using apt-get,<br>
+					<code>sudo apt-get install hatari</code></p>
+
+					<p>Anyone familiar with Atari ST emulation will know that you need to obtain a TOS rom file
+					that contains the Atari operating code. These are easy to find online. I saved that file as,<br>
+					<code>/home/pi/atari_tos/TOS104UK.img</code></p>
+
+					<p>If you want to get the Pi to boot directly into Hatari you need to do a couple of things. Firstly, to
+					have the Pi auto-login follow these <a href="http://elinux.org/RPi_Debian_Auto_Login">instructions</a>.
+					
+					</p>Your set-up may vary, but I added the following commands to the end of the file 
+					<code>/home/pi/.bashrc</code> which causes the Pi to set the speaker volume (my speaker has no 
+					volume control) and to automatically start Hatari:<br>
+					<code>/usr/bin/amixer -c 0 sset PCM playback 10%</code><br>
+					<code>/usr/bin/hatari --fullscreen --tos /home/pi/atari_tos/TOS104UK.img</code></p>
+
+					<p>Hatari uses the F12 key to bring up its main menu where you can change its settings and load 
+					applications. The ST keyboard only has 10 function keys so I mapped F12 to the Atari 'Help' key.</p>
+
+					<p>Depending on what you want to run you may need to overclock your Pi to get acceptable 
+					performance. There are a number of tutorials available on this subject but take care not 
+					to overdo things.</p>
+
+				</div>
+				<div class="span4 offset1">
+					<p align="center"><img src="img/st_bootup.jpg" alt="More Pi"></p>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>Return to <a href="index.html">home page</a>.</p>
+					<hr>
+				</div>
+			</div>
+
+		</div>
+    
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

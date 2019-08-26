@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kevin Peat - Robot Electronics</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Kevin Peat">
+		<meta name="description" content="Kevin Peat - Robot Electronics">
+		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2016">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="row-fluid">
+				<div class="span11">
+					<a href="index.html"><img border="0" src="img/banner.jpg" alt="Banner"></a>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>&nbsp;</p>
+					<p>Robot Project: <a href="robot_components.html">Components</a> | 
+					<a href="robot_chassis.html">Chassis Assembly</a> | 
+					<a href="robot_electronics.html">Electronics</a> | 
+					<a href="robot_wiring.html">Wiring</a> | 
+					<a href="robot_code.html">Code</a></p>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span6">
+					<p class="bem">Adding the Electronic Components to the Chassis</p>
+					<p>I used adhesive-backed velcro to attach the breadboard, Arduino and motor shield 
+					to the chassis top plate. It seems to work well enough to both attach the components and 
+					to insulate them from the chassis.</p>
+					<p>After soldering the header to the LCD screen (there is a good tutorial on LCD screens 
+					<a href="http://learn.adafruit.com/character-lcds/wiring-a-character-lcd">here</a>), plug 
+					it into the breadboard. The Maplins breadboard I used has a separate side section that is 
+					ideal for this. A potentiometer is also required to act as a brightness control for the 
+					screen and this also needs to be found a convenient spot on the breadboard.</p>
+					<p>I used the brackets supplied with the chassis to mount the IR sensors to the plate on 
+					the front of the chassis. One is aimed directly forward and the other two are pointed down 
+					and to the side largely with the idea of checking for steps. These positions will probably 
+					need some tuning over time.</p>
+					<p>As a temporary measure, the ultrasonic sensor can be plugged directly into the breadboard, 
+					pointing forwards. In this position it is a bit unstable and prone to some odd readings so 
+					I intend to make a more solid mount for it eventually. The accelerometer also needs to be 
+					soldered to its header before it can be used and just needs to be mounted at a suitable empty 
+					space on the breadboard.</p>
+					<p>When connecting components to the breadboard be VERY CAREFUL to make sure you do not 
+					accidentally connect different components on the same breadboard tracks otherwise short-circuits 
+					and almost certain disappointment will result. This 
+					<a href="http://www.instructables.com/id/Breadboard-Basics-for-Absolute-Begginers/">instructable</a> 
+					covers breadboard basics if you are just getting started with electronics.</p>
+				</div>
+				<div class="span4 offset1">
+					<p align="center"><img src="img/robot-top.jpg" alt="Adding Robot Components"></p>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>Return to <a href="index.html">home page</a>.</p>
+					<hr>
+				</div>
+			</div>
+
+		</div>
+    
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

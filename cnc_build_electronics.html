@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kevin Peat - CNC DIY Build - Electronics</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Kevin Peat">
+		<meta name="description" content="Kevin Peat - Robot Wiring">
+		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2016">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="row-fluid">
+				<div class="span11">
+					<a href="index.html"><img border="0" src="img/banner.jpg" alt="Banner"></a>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>&nbsp;</p>
+					<p>CNC DIY Build: <a href="cnc_build_design.html">Design</a> | 
+					<a href="cnc_build_electronics.html">Electronics</a> | 
+					<a href="cnc_build_gantry.html">Gantry</a> | 
+					<a href="cnc_build_assembly.html">Assembly</a> | 
+					<a href="cnc_build_zaxis.html">Z-Axis</a> | 
+					<a href="cnc_build_spindle.html">Spindle</a> | 
+					<a href="cnc_build_software.html">Software</a></p>
+
+					<p class="bem">CNC Electronics Control Box</p>
+
+					<p>I bought a large old Coolermaster PC case to house the CNC control electronics. Once the 
+					contents were removed there was plenty of space for the steppers drivers, BoB and power supply. 
+					I removed the PC power supply but may refit it in the future as the voltages available can be 
+					quite useful. I fitted a mains isolating switch to the top of the case as can be seen below.</p>
+
+					<p>The connections from the stepper drivers to the steppers themselves need to be carefully 
+					wired to reduce the chance of interference. Use shielded cable and ground the shielding only at 
+					the control box end to avoid potential ground loops. Connections to the e-stop button, limit 
+					switches (not yet fitted) and potentially the VFD should be similarly wired.</p>
+
+					<p>Best practice is to wire the e-stop so that it works independently from the BoB so regardless 
+					of the PC/BoB state pressing the e-stop will shut-off the machine. I decided not to do that at 
+					this stage.</p>
+
+					<p>Many different types of steppers are available with different wiring colours and schemes. I 
+					found this <a href="http://www.linengineering.com/resources/wiring_connections.aspx">page</a> 
+					very useful in getting the stepper wiring right.</p>
+
+					<p align="center"><img src="cnc_build/wiring_diagram.png" alt="CNC Wiring Diagram"></p>
+					<p>&nbsp;</p>
+					<p align="center"><img src="cnc_build/2014-05-13.jpg" alt="CNC Electronics 1"></p>
+					<p>&nbsp;</p>
+					<p align="center"><img src="cnc_build/2014-05-26a.jpg" alt="CNC Electronics 2"></p>
+					<p>&nbsp;</p>
+					<p align="center"><img src="cnc_build/2014-05-26b.jpg" alt="CNC Electronics 3"></p>
+					<p>&nbsp;</p>
+					<p align="center"><img src="cnc_build/2014-05-26c.jpg" alt="CNC Electronics 4"></p>
+					<p>&nbsp;</p>
+					<p align="center"><img src="cnc_build/2014-05-26d.jpg" alt="CNC Electronics 5"></p>
+					<p>&nbsp;</p>
+				</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>Return to <a href="index.html">home page</a>.</p>
+					<hr>
+				</div>
+			</div>
+
+		</div>
+    
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

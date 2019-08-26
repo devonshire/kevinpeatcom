@@ -1,0 +1,12 @@
+(Created with emc2b post processor 2015/02/03 19:55)
+(tool change to 5 mm End Mill)
+T4 M06 G43
+G17 G90 G21
+G00 X10 Y7.5 S12000 M03
+Z40 
+G83 Q0.5 G98 X10 Y7.5 Z-4 R10 F100 
+X30 Y7.5  
+X290 Y7.5  
+X275 Y7.5  
+G80
+T0 M06 M02

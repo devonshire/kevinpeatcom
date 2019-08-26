@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kevin Peat - CNC DIY Build - Software</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Kevin Peat">
+		<meta name="description" content="Kevin Peat - Robot Wiring">
+		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2016">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="row-fluid">
+				<div class="span11">
+					<a href="index.html"><img border="0" src="img/banner.jpg" alt="Banner"></a>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>&nbsp;</p>
+					<p>CNC DIY Build: <a href="cnc_build_design.html">Design</a> | 
+					<a href="cnc_build_electronics.html">Electronics</a> | 
+					<a href="cnc_build_gantry.html">Gantry</a> | 
+					<a href="cnc_build_assembly.html">Assembly</a> | 
+					<a href="cnc_build_zaxis.html">Z-Axis</a> | 
+					<a href="cnc_build_spindle.html">Spindle</a> | 
+					<a href="cnc_build_software.html">Software</a></p>
+
+					<p class="bem">Software</p>
+
+					<p>Being an open-source enthusiast I am looking for FLOSS solutions for 
+					machine control and CAD/CAM.</p>
+
+					<p>I am using <a href="http://www.linuxcnc.org">LinuxCNC</a> to control my mill. 
+					It is available from the LinuxCNC site as part of a tailored Ubuntu distribution 
+					and I found it to be easy to install and it runs well on relatively modest hardware (old 
+					Core 2 Duo with 1GB RAM in my case). For latency reasons, LinuxCNC connects to the mill 
+					via a good old parallel port so make sure you have one.</p>
+
+					<p>So far, I have been using <a href="http://www.qcad.org">QCAD</a> on both Linux and Windows 
+					for 2D CAD designs and <a href="https://sites.google.com/site/heekscad/">HeeksCAD</a>, 
+					so far just on Linux (Fedora 20), for both CAD and CAM functions.</p>
+
+					<p>I had some minor issues getting HeeksCAD/HeeksCNC to compile on Fedora. 
+					For dependency information check 
+					<a href="https://sites.google.com/site/heekscad/home/Details">here</a>. 
+					For Linux build instructions check 
+					<a href="https://code.google.com/p/heekscad/wiki/BuildHeeksCncUnderLinux">here</a>. 
+					And for a small fix required re. libheekstinyxml.so.1.0.0 check 
+					<a href="https://github.com/jieter/linuxcnc-config/blob/master/notes/heekscnc-linux.md">here</a>.</p>
+
+					<p>I am not sure if HeeksCNC will meet my long-term CAM requirements but I hope so as CAM software 
+					in general seems expensive to me considering what you are getting for your money.</p>
+				</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>Return to <a href="index.html">home page</a>.</p>
+					<hr>
+				</div>
+			</div>
+
+		</div>
+    
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

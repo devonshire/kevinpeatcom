@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kevin Peat - Robot Code</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Kevin Peat">
+		<meta name="description" content="Kevin Peat - Robot Code">
+		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2016">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="row-fluid">
+				<div class="span11">
+					<a href="index.html"><img border="0" src="img/banner.jpg" alt="Banner"></a>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>&nbsp;</p>
+					<p>Robot Project: <a href="robot_components.html">Components</a> | 
+					<a href="robot_chassis.html">Chassis Assembly</a> | 
+					<a href="robot_electronics.html">Electronics</a> | 
+					<a href="robot_wiring.html">Wiring</a> | 
+					<a href="robot_code.html">Code</a></p>
+					<p class="bem">Writing Code For Your Robot</p>
+					<p>I have kept the code driving the robot fairly simple at this stage, it moves 
+					forward and if it senses an obstacle it turns randomly to the left or right.</p>
+					<p>The ultrasonic sensor is good at recognising large objects such as pieces of 
+					furniture but smaller or more irregularly shaped objects can go unseen. Also, 
+					just plugging the sensor into the breadboard means it isn't that stable and 
+					occasionally needs adjusting. I plan to create a proper mount for it at some 
+					stage to resolve this.</p>
+					<p>I have adjusted the infra-red sensors to look for objects on the ground at 
+					very short range. This works okay most of the time. Infra-red sensors have their 
+					limitations, not working well in direct sunlight or failing to recognise objects 
+					that poorly reflect infra-red light. At some stage I will get some more expensive 
+					sensors to see if they work better.</p>
+					<p>This <a href="http://www.societyofrobots.com/member_tutorials/node/71">article</a> 
+					does a good job at comparing the relative merits of infra-red and ultrasonic sensors.</p>
+					<p>Adding hardware bump sensors would also be a good idea so that where the other sensors 
+					fail the robot doesn't plough on regardless potentially damaging itself and/or your 
+					furniture.</p>
+					<p>The current program just uses the accelerometer to sense if the robot has tipped over 
+					and then cuts the power. The accelerometer could also be used to sense gradual changes in 
+					gradient and to back away from potential problems. It could also be used to sense if the 
+					robot has stalled and to cut the power before any damage is done to the motors.</p>
+					<p>For the HC-SR04 Ultrasonic Sensor I used the 
+					<a href="http://code.google.com/p/arduino-new-ping/">NewPing</a> library and for the 
+					MMA7361 3-axis Accelerometer I used the 
+					<a href="http://code.google.com/p/mma7361-library/">AcceleroMMA7361</a> library. You need 
+					to download those libraries and install them in the &ldquo;libraries&rdquo; directory 
+					within your Arduino development environment installation.</p>
+
+					<p>The sketch is available to download from 
+					<a href="http://github.com/devonshire/arduino-simple-robot">Github</a>. See the 
+					<a href="http://arduino.cc/en/Guide/HomePage">Arduino Getting Started</a> pages 
+					if you are new to Arduino.</p>
+				</div>
+			</div>
+
+			<div class="row-fluid">
+				<div class="span11">
+					<p>Return to <a href="index.html">home page</a>.</p>
+					<hr>
+				</div>
+			</div>
+
+		</div>
+    
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
