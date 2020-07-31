@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Kevin Peat - Sim Racing Pedals Build</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+		<meta http-equiv="x-ua-compatible" content="ie=edge"> 
 		<meta name="keywords" content="Kevin Peat">
 		<meta name="description" content="Kevin Peat - Sim Racing Pedals Build">
-		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2016">
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2020">
+		<title>Kevin Peat - Sim Racing Pedals Build</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container">
 
-			<div class="row-fluid">
-				<div class="span11">
-					<a href="index.html"><img border="0" src="img/banner.jpg" alt="Banner"></a>
+			<div class="row">
+				<div class="col-lg-12"> 
+					<a href="index.html"><img border="0" src="img/banner1200.jpg" alt="Banner"></a>
 					<p>&nbsp;</p>
 				</div>
 			</div>
 
-			<div class="row-fluid">
-				<div class="span4">
-					<p class="bem">Sim Racing Pedals Build</p>
+			<div class="row">
+				<div class="col-lg-12"> 
+					<h3>Sim Racing Pedals Build</h3>
+				</div>
+			</div>
 
-					<p>I used G27 pedals with the Nixim brake mod for a number of years and although 
-					they work well I wanted some top mounted GT style pedals to hopefully get a better feeling 
-					of immersion so I decided to make my own.</p>
+			<div class="row">
+				<div class="col-lg-6"> 
+					<p>I used G27 pedals with the Nixim brake mod for many years and although they worked fine 
+					I wanted some top mounted GT style pedals to hopefully get a better feeling of immersion 
+					so I decided to make my own.</p>
 					
 					<p>For the main structure, I used 50mm x 50mm and 30mm x 15mm aluminium box section and 
-					10mm stainless steel rod to hold it all together. I produced a basic CAD design and g-code 
-					files for CNC which are available 
-					<a href="http://www.kevinpeat.com/pedals/design/?C=N;O=A">here</a> although they could just 
-					as easily have been cut and drilled by hand.</p>
+					10mm stainless steel rod with some fairly sturdy collars to hold it all together. I looked at 
+					a few designs online and produced a basic CAD design in <a href="https://www.sketchup.com/">Sketchup</a> 
+					although I did change a few things during the build:</p>
+
+					<ul>
+						<li>Sketchup Pedals Design <a href="pedals/pedals_design_main.skp"><img src="icons/download-16.png"></a></li>
+					</ul>
+					
+					<p>The CNC g-code files that I used:</p>
+					
+					<ul>
+						<li>Box Section Bottom <a href="pedals/box_section_bottom.ngc"><img src="icons/download-16.png"></a></li>
+						<li>Box Section Sides<a href="pedals/box_section_sides.ngc"><img src="icons/download-16.png"></a></li>
+						<li>Box Section Top<a href="pedals/box_section_top.ngc"><img src="icons/download-16.png"></a></li>
+						<li>Box Section Top Brake<a href="pedals/box_section_top_brake.ngc"><img src="icons/download-16.png"></a></li>
+						<li>End Section Sides<a href="pedals/end_section_sides.ngc"><img src="icons/download-16.png"></a></li>
+						<li>End Section Top and Bottom<a href="pedals/end_section_top_and_bottom.ngc"><img src="icons/download-16.png"></a></li>
+						<li>Pedal Arm Sides<a href="pedals/pedal_arm_sides.ngc"><img src="icons/download-16.png"></a></li>
+						<li>Pedal Arm Top<a href="pedals/pedal_arm_top.ngc"><img src="icons/download-16.png"></a></li>
+					</ul>
+
+					<p>Although I used a CNC machine for some of the parts, as aluminium is very soft they could 
+					easily have been cut and drilled by hand with a basic power drill and a hacksaw.</p>
 					
 					<p>For the electronics, I used the <a href="http://www.leobodnar.com/shop/">Leo Bodnar</a> 
 					BU0836-LC Load Cell Joystick Controller which has a single load cell interface and multiple 
@@ -40,53 +64,63 @@
 										
 					<p>The load cell I used for the brake is a 0-30kg model bought from China which results in a 
 					fairly light pedal so I may swap that for a higher rated model in the future. The model 
-					I have is a Shenlen SL602 which is wired as WHITE = +5V, RED = -IN, YELLOW = +IN and BLACK = GND.</p>
+					I have is a Shenlen SL602 which is wired as:</p>
+					
+					<ul>
+						<li>WHITE = +5V</li>
+						<li>RED = -IN</li>
+						<li>YELLOW = +IN</li>
+						<li>BLACK = GND</li>
+					</ul>
 
 					<p>For the clutch and accelerator I initially used A1302 Hall Sensors which are contactless and in 
-					theory should maintain a smooth operation over the long-term.</p>
-										
-					<p><i>Update</i>: For unknown reasons I had trouble getting the hall sensor on the accelerator 
-					to stay properly calibrated between sessions so I decided to replace it with a potentiometer 
-					(ALPS 10k RK09711110K) and a traditional linkage which is working great so far.</p>
+					theory should maintain a smooth operation over the long-term. However, in use I found the hall 
+					sensors didn't stay properly calibrated so I decided to replace them with potentiometers (ALPS 10k 
+					RK09711110K) and traditional linkages which is working great so far.</p>
 
-					<p>Choosing springs was mostly trial and error. I ended up with the brake spring being 
-					27mm (OD) x 83mm x 5mm and the clutch as 17.5mm (OD) x 90mm x 2.8mm. I am still testing some 
-					different accelerator springs. The one I am currently using is approximately 12.5mm (OD) x 80mm x 1mm. 
-					My advice is just to buy a few springs so you can test how the pedals feel with different strengths.</p>
+					<p>Choosing springs was mostly trial and error. I ended up with:</p>
+					
+					<ul>
+						<li>Accelerator: 12.5mm (OD) x 80mm x 1mm</li>
+						<li>Brake: 27mm (OD) x 83mm x 5mm</li>
+						<li>Clutch: 17.5mm (OD) x 90mm x 2.8mm</li> 
+					</ul>
+						
+					<p>This is one area where you may need to try different springs to find some that you like.</p>
 										
 					<p>The pedals are fully adjustable for separation, reach and stroke but as I always left-foot 
 					brake in games I spaced them fairly equally although it would be straightforward to set them 
-					for heel-and-toe operation.</p>
+					up for heel-and-toe.</p>
 	
-					<p>I don't think these pedals will make me any quicker but they do feel a lot more like 
-					driving a real car than my G27's so are good for improving immersion.</p>
-					
+					<p>I don't think these pedals have made me any quicker but they do feel a lot more like 
+					driving a real car than G27's so are good for improving immersion at least.</p>
 				</div>
-				<div class="span6 offset1">
-					<p align="center"><img src="pedals/sim_racing_pedals_02.jpg" alt="Sim Racing Pedals 02"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_03.jpg" alt="Sim Racing Pedals 03"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_04.jpg" alt="Sim Racing Pedals 04"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_05.jpg" alt="Sim Racing Pedals 05"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_06.jpg" alt="Sim Racing Pedals 06"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_07.jpg" alt="Sim Racing Pedals 07"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_08.jpg" alt="Sim Racing Pedals 08"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_09.jpg" alt="Sim Racing Pedals 09"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_10.jpg" alt="Sim Racing Pedals 10"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_11.jpg" alt="Sim Racing Pedals 11"></p>
-					<p align="center"><img src="pedals/sim_racing_pedals_12.jpg" alt="Sim Racing Pedals 12"></p>
+
+				<div class="col-lg-6"> 
+					<p align="center"><img src="img/sim_racing_pedals_02.jpg" alt="Sim Racing Pedals 02" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_02.jpg" alt="Sim Racing Pedals 02" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_03.jpg" alt="Sim Racing Pedals 03" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_04.jpg" alt="Sim Racing Pedals 04" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_05.jpg" alt="Sim Racing Pedals 05" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_06.jpg" alt="Sim Racing Pedals 06" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_07.jpg" alt="Sim Racing Pedals 07" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_08.jpg" alt="Sim Racing Pedals 08" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_09.jpg" alt="Sim Racing Pedals 09" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_10.jpg" alt="Sim Racing Pedals 10" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_11.jpg" alt="Sim Racing Pedals 11" class="img-fluid"></p>
+					<p align="center"><img src="img/sim_racing_pedals_12.jpg" alt="Sim Racing Pedals 12" class="img-fluid"></p>
 				</div>
 			</div>
 
-			<div class="row-fluid">
-				<div class="span11">
+			<div class="row">
+				<div class="col-lg-12"> 
 					<p>Return to <a href="index.html">home page</a>.</p>
 					<hr>
 				</div>
 			</div>
-
 		</div>
     
-		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

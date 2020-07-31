@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Kevin Peat - Arduino USB Joystick</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+		<meta http-equiv="x-ua-compatible" content="ie=edge"> 
 		<meta name="keywords" content="Kevin Peat">
 		<meta name="description" content="Kevin Peat - Arduino USB Joystick">
-		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2016">
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<meta name="copyright" content="All Original Content Copyright Kevin Peat 2020">
+		<title>Kevin Peat - Arduino USB Joystick</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container">
 
-			<div class="row-fluid">
-				<div class="span11">
-					<a href="index.html"><img border="0" src="img/banner.jpg" alt="Banner"></a>
+			<div class="row">
+				<div class="col-lg-12"> 
+					<a href="index.html"><img border="0" src="img/banner1200.jpg" alt="Banner"></a>
 					<p>&nbsp;</p>
 				</div>
 			</div>
 
-			<div class="row-fluid">
-				<div class="span6">
-					<p class="bem">Arduino USB Arcade Joystick</p>
+			<div class="row">
+				<div class="col-lg-12"> 
+					<h3>Arduino USB Joystick</h3>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6"> 
 
 					<p>I wanted to put together a chunky, arcade style digital joystick to use 
 					when playing retro-games (mostly Atari ST vintage) on the PC.</p>
@@ -53,10 +59,10 @@
 
 					<p>To use an Arduino Leonardo as a USB game controller requires modified versions 
 					of the Arduino libraries, HID.cpp and USBAPI.h which can be found at 
-					<a href="http://www.imaginaryindustries.com/blog/?p=80">www.imaginaryindustries.com</a>. 
-					The simple installation requirements are shown on that page. Thanks to Peter Barrett 
-					for releasing the code. Note that you should change those files back to the original 
-					Arduino versions once you have finished with your joystick and uploaded the sketch to it.</p>
+					<a href="https://www.instructables.com/id/Add-USB-Game-Controller-to-Arduino-LeonardoMicro/">www.instructables.com</a>. 
+					The simple installation requirements are shown on that page. Note that before copying those 
+					files into your Arduino directory you should back up the originals. Once you have written the 
+					sketch to the Arduino you should restore the original files to avoid problems with future uploads.</p>
 
 					<p>My Arduino sketch is available to download from 
 					<a href="https://github.com/devonshire/arduino-joystick">GitHub</a>. See the 
@@ -64,22 +70,22 @@
 					if you are new to Arduino.</p></p>
 
 				</div>
-				<div class="span4 offset1">
-					<p align="center"><img src="img/joystick1.jpg" alt="Joystick"></p>
-					<p align="center"><img src="img/joystick2.jpg" alt="Joystick"></p>
+
+				<div class="col-lg-6"> 
+					<p align="center"><img src="img/joystick1.jpg" alt="Joystick" class="img-fluid"></p>
+					<p align="center"><img src="img/joystick2.jpg" alt="Joystick" class="img-fluid"></p>
 				</div>
 			</div>
 
-			<div class="row-fluid">
-				<div class="span11">
+			<div class="row">
+				<div class="col-lg-12"> 
 					<p>Return to <a href="index.html">home page</a>.</p>
 					<hr>
 				</div>
 			</div>
-
 		</div>
-    
-		<script src="js/jquery-1.9.1.min.js"></script>
+
+		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
